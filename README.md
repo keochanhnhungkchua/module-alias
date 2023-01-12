@@ -105,3 +105,7 @@ module.exports = function (api) {
     "exclude": ["node_modules", "web-build", ".expo", ".expo-shared", ".vscode"]
   }
 ```
+
+> Reference :
+> https://stackoverflow.com/questions/68675994/what-is-jsconfig-json
+> https://mtateam.medium.com/how-to-use-import-aliases-with-react-native-and-vs-code-dadb246674c7
