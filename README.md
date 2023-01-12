@@ -1,5 +1,38 @@
 # module-alias : React,React Native (include Expo),NextJS ,  NodeJS 
-
+# Use Path Aliases with React  and VS Code : [jsconfig](https://code.visualstudio.com/docs/languages/jsconfig)
+###  jsconfig.json
+```
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es6",
+      "baseUrl": "src",
+     "paths": {
+        "@components/*": ["components/*"],
+        "@pages/*": ["pages/*"],
+      }
+    },
+    "exclude": ["node_modules", ".vscode"]
+  }
+```
+#  Use Path Aliases NodeJS  : [module-alias](https://www.npmjs.com/package/module-alias)
+#  Use Path Aliases with NextJS and VS Code
+###  jsconfig.json
+```
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es6",
+      "baseUrl": "src",
+       "paths": {
+        "@components/*": ["components/*"],
+        "@pages/*": ["pages/*"],
+      }
+    
+    },
+    "exclude": ["node_modules", ".vscode"]
+  }
+```
 #  Use Path Aliases with React Native and VS Code
 
 Example : import SomeOtherComponent from '../../../SomeOtherPath/index.js 
